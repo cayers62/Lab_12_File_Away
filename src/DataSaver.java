@@ -17,7 +17,13 @@ public class DataSaver
 
       //Beginning Array records.
         ArrayList<String> recs = new ArrayList<>();
-        int idCounter = 1;
+        recs.add("000100  James Logan   GLC  02.19.81 waterbug@yahoo.com");
+        recs.add("000101  Kelsey Marie  PCA  01.06.96 isllenmarie@gmail.com");
+        recs.add("000102  Mikel Douglas OPT  03.06.01 mdouglas@fuse.net");
+        recs.add("000103  Percival Dewitt SPN 01.11.19 farmerp@mickeymouse.edu");
+        recs.add("000104  Freya Dewitt   LPB  11.10.20 skyepup@pawpatrol.gov");
+
+    int idCounter = 1;
 
         // Loop to collect user data
         boolean addMore = true;
@@ -49,7 +55,7 @@ public class DataSaver
 
         //File writer
         File workingDirectory = new File(System.getProperty("user.dir"));
-        Path file = Paths.get(workingDirectory.getPath());
+        Path file = Paths.get(workingDirectory.getPath(),"data.csv");
 
 
         try(BufferedWriter writer = Files.newBufferedWriter(file, CREATE)) {

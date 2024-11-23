@@ -204,7 +204,8 @@ public class SafeInput {
                 confirm = true;
                 done = true;
             } else if (response.equalsIgnoreCase("N")){
-                confirm =true;
+                done = true;
+                confirm = false;
             } else {
                 System.out.println("Not a valid response please try again:");
             }
